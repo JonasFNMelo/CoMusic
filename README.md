@@ -1,59 +1,133 @@
+<div align="center">
+
 # CoMusic
 
-Um redesign conceitual do Instagram reimaginado como um aplicativo de música, desenvolvido como estudo prático da **Apple Human Interface Guidelines (HIG)**.
+### What if Apple had designed Instagram — for music? 🎧
 
-## Sobre o projeto
+CoMusic is a conceptual redesign of Instagram reimagined as a music app, built from scratch
+in SwiftUI as a hands-on study of Apple's **Human Interface Guidelines**: feed, search,
+reels and profile, rebuilt around music discovery and sharing.
 
-O CoMusic nasceu de uma proposta de estudo: aprender a fundo as diretrizes de design da Apple aplicando-as em um caso real. Partimos da interface do Instagram e a reconstruímos do zero em SwiftUI, transformando-a em um app voltado para descoberta, compartilhamento e curadoria musical, e alinhando cada decisão visual e de interação às convenções da HIG (hierarquia, navegação, tipografia, espaçamentos, gestos e padrões nativos do iOS).
+<br/>
 
-A ideia central era responder duas perguntas:
+[![Platform](https://img.shields.io/badge/iOS-SwiftUI-000000?style=for-the-badge&logo=apple&logoColor=white)](https://www.apple.com/ios/)
+[![Swift](https://img.shields.io/badge/Swift-5-FA7343?style=for-the-badge&logo=swift&logoColor=white)](https://swift.org)
+[![SwiftUI](https://img.shields.io/badge/SwiftUI-0052CC?style=for-the-badge&logo=swift&logoColor=white)](https://developer.apple.com/xcode/swiftui/)
+[![License](https://img.shields.io/badge/License-MIT-3DA639?style=for-the-badge)](LICENSE)
 
-- Como seria o Instagram se ele tivesse sido projetado **pela Apple**, seguindo rigorosamente a HIG?
-- Como adaptar essa mesma estrutura para um propósito diferente: **música** no lugar de fotos e vídeos genéricos?
+</div>
 
-## Tecnologias
+---
 
-- **Swift**
-- **SwiftUI**
-- **Xcode**
+## 📑 Table of Contents
 
-## Estrutura do projeto
+- [About](#-about)
+- [Features](#-features)
+- [Design Approach](#-design-approach)
+- [Tech Stack](#-tech-stack)
+- [Project Structure](#-project-structure)
+- [Getting Started](#-getting-started)
+- [Authors](#-authors)
+- [License](#-license)
 
-O app é organizado em torno das principais áreas de navegação, espelhando (e repensando) as seções clássicas do Instagram:
+---
 
-- `Home` — feed principal adaptado para conteúdo musical
-- `Search` — descoberta e busca
-- `Reels` — vídeos curtos no contexto musical
-- `Picker` — seleção de conteúdo
-- `Profile`, `Profile2`, `Profile3` — variações de perfil exploradas durante o redesign
-- `Assets.xcassets` — recursos visuais do app
+## 📖 About
 
-> 📸 _Screenshots em breve._
+CoMusic started as a study exercise: learning Apple's design guidelines in depth by
+applying them to a real case. We took Instagram's interface and rebuilt it from scratch in
+SwiftUI, turning it into an app for music discovery, sharing and curation, and aligning
+every visual and interaction decision with the HIG — hierarchy, navigation, typography,
+spacing, gestures and native iOS patterns.
 
-## O que este projeto demonstra
+The project set out to answer two questions:
 
-- Aplicação prática da **Human Interface Guidelines**: hierarquia, navegação, tipografia e espaçamentos nativos do iOS
-- Reconstrução de uma interface complexa (feed, busca, reels e perfil) inteiramente em **SwiftUI**
-- Exploração de alternativas de design: as pastas `Profile`, `Profile2` e `Profile3` guardam variações da tela de perfil testadas durante o redesign
+- What would Instagram look like if it had been designed **by Apple**, strictly following the HIG?
+- How do you adapt that same structure to a different purpose — **music** instead of generic photos and videos?
 
-## Como rodar
+---
 
-Este repositório contém o código-fonte e os assets do app, mas não inclui o arquivo `.xcodeproj`. Para executar:
+## 🚀 Features
 
-1. Clone o repositório:
+- **🏠 Home** — a feed of music posts with a horizontal, story-style row at the top.
+- **🔎 Search** — music discovery through an image-based explore layout.
+- **🎬 Clips** — short-form vertical content in a music context, with author info.
+- **👤 Profile** — profile header, information and a segmented picker for the user's content.
+
+---
+
+## 🎨 Design Approach
+
+The app mirrors — and rethinks — Instagram's classic sections, applying native iOS
+conventions throughout instead of custom chrome. The `Profile`, `Profile2` and `Profile3`
+folders keep the alternative profile designs explored during the redesign, so the
+iterations can be compared side by side.
+
+---
+
+## 🛠️ Tech Stack
+
+| Area | Tech |
+|------|------|
+| UI | SwiftUI |
+| Design reference | Apple Human Interface Guidelines |
+
+---
+
+## 📂 Project Structure
+
+```
+CoMusic/
+├── CoMusicApp.swift            # App entry
+├── Home/                       # Feed, posts, navigation bar
+├── Search/                     # Explore layout
+├── Reels/                      # Short-form content
+├── Picker/                     # Profile content picker
+├── Profile/ Profile2/ Profile3/  # Profile design iterations
+└── Assets.xcassets/            # Images, icons, colors
+```
+
+---
+
+## 🎯 Getting Started
+
+### Requirements
+
+- Xcode 16+
+
+### Run
+
+This repository contains the app's source code and assets, but no `.xcodeproj` file. To run it:
+
+1. Clone the repository:
    ```bash
    git clone https://github.com/JonasFNMelo/CoMusic.git
    ```
-2. No Xcode, crie um novo projeto **iOS › App** com interface **SwiftUI** chamado `CoMusic`.
-3. Apague os arquivos `ContentView.swift`, `CoMusicApp.swift` e `Assets.xcassets` gerados pelo template.
-4. Arraste todo o conteúdo do repositório para o projeto (marque *Copy items if needed* e *Create groups*).
-5. Selecione um simulador de iPhone e execute (`⌘R`).
+2. In Xcode, create a new **iOS › App** project named `CoMusic` with the **SwiftUI** interface.
+3. Delete the template's `ContentView.swift`, `CoMusicApp.swift` and `Assets.xcassets`.
+4. Drag the repository's contents into the project (check *Copy items if needed* and *Create groups*).
+5. Pick an iPhone simulator and run (`⌘R`).
 
-## Autores
+---
 
-- **Jonas Melo**
-- **Miqueias Saldanha**
+## 👥 Authors
 
-## Licença
+<table width="100%">
+  <tr>
+    <td align="center" width="50%">
+      <a href="https://github.com/JonasFNMelo"><img src="https://github.com/JonasFNMelo.png" width="80" alt="Jonas Melo"/></a>
+      <br/><sub><b>Jonas Melo</b></sub><br/>
+      <a href="https://github.com/JonasFNMelo"><img src="https://skillicons.dev/icons?i=github" alt="GitHub"/></a>
+      <a href="https://www.linkedin.com/in/jonas-melo-/"><img src="https://skillicons.dev/icons?i=linkedin" alt="LinkedIn"/></a>
+    </td>
+    <td align="center" width="50%">
+      <br/><sub><b>Miqueias Saldanha</b></sub><br/>
+    </td>
+  </tr>
+</table>
 
-Distribuído sob a licença MIT. Veja o arquivo [LICENSE](./LICENSE) para mais informações.
+---
+
+## 📄 License
+
+Released under the [MIT License](LICENSE).
