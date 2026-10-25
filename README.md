@@ -28,14 +28,26 @@ O app é organizado em torno das principais áreas de navegação, espelhando (e
 - `Profile`, `Profile2`, `Profile3` — variações de perfil exploradas durante o redesign
 - `Assets.xcassets` — recursos visuais do app
 
+> 📸 _Screenshots em breve._
+
+## O que este projeto demonstra
+
+- Aplicação prática da **Human Interface Guidelines**: hierarquia, navegação, tipografia e espaçamentos nativos do iOS
+- Reconstrução de uma interface complexa (feed, busca, reels e perfil) inteiramente em **SwiftUI**
+- Exploração de alternativas de design: as pastas `Profile`, `Profile2` e `Profile3` guardam variações da tela de perfil testadas durante o redesign
+
 ## Como rodar
+
+Este repositório contém o código-fonte e os assets do app, mas não inclui o arquivo `.xcodeproj`. Para executar:
 
 1. Clone o repositório:
    ```bash
    git clone https://github.com/JonasFNMelo/CoMusic.git
    ```
-2. Abra o projeto no **Xcode** (recomendado Xcode 15 ou superior).
-3. Selecione um simulador de iPhone e execute (`⌘R`).
+2. No Xcode, crie um novo projeto **iOS › App** com interface **SwiftUI** chamado `CoMusic`.
+3. Apague os arquivos `ContentView.swift`, `CoMusicApp.swift` e `Assets.xcassets` gerados pelo template.
+4. Arraste todo o conteúdo do repositório para o projeto (marque *Copy items if needed* e *Create groups*).
+5. Selecione um simulador de iPhone e execute (`⌘R`).
 
 ## Autores
 
